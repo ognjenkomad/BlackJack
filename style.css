@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;    
+    position: absolute;
+    top:  0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}
+#table-wrapper
+{
+    background-image: url(blakcjacktable.png);
+}
+.credits
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: aliceblue;
+    font-size: 1.3em;
+}
+#controls > button{
+    border: 2px solid #eee;
+    background-color: firebrick;
+    color: #eee;
+    font-size: 1.1em;
+}
+#btnDeal
+{
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    cursor: pointer;
+}
+#btnHit
+{
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    cursor: pointer;
+}
+#btnDouble
+{
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    cursor: pointer;
+}
+#btnStand
+{
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    cursor: pointer;
+}
+#btnRemoveBets
+{
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    cursor: pointer;
+}
+#btnNewBet {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    cursor: pointer;
+}
+
+#btnRebet {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    cursor: pointer;
+}
+.card-holder{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 23%;
+    left: 84%;
+}
+.player-holder{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 43%;
+    left: 14%;
+}
+.dealer-holder{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 14%;
+    left: 35%;
+}
+.bets-holder
+{
+    margin-top: 90px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    height: 65px;
+    width: 65px;
+    color: aqua;
+    top: 52%;
+    left: 14%;
+    position: absolute;
+}
+.bets-holder p{
+    margin: 10px auto;
+}
+.bets-holder .sum{
+   position: absolute;
+    top: 90%;
+    left: -19%;
+    width: 200px;
+    text-align: left;
+}
+.sum{
+    font-size: 1.6em;
+    color: paleturquoise;
+    position: absolute;
+    top: -20%;
+    left: -5%;
+}
+
+.front
+{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    transform: perspective(900px) rotateY(180deg);
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+    border-radius: 4%;
+}
+.back
+{
+    width: 99px;
+    height: 146px;
+    position: absolute;
+    top: 1%;
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+}
+.chips > button{
+    min-width: 49px;
+    min-height: 49px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 6px black;
+    cursor: pointer;
+    font-size: 1em;
+}
+.chips > button:hover{
+    transform: translateY(-5px);
+    /*transform: scale(1.1);*/
+}
+#chip1{
+    left: 5%;
+    top: 78%;
+    background-color: aquamarine;
+}
+#chip5{
+    left: 10%;
+    top: 80%;
+    background-color: forestgreen;
+}
+#chip10{
+    left: 15%;
+    top: 82%;
+    background-color: darkviolet;
+}
+#chip25{
+    left: 20%;
+    top: 84%;
+    background-color : firebrick;
+}
+#chip100{
+    left: 25%;
+    top: 86%;
+    background-color : darkgoldenrod;
+}
+.clone{
+    position: absolute;
+}
+
